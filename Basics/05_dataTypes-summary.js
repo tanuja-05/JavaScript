@@ -61,3 +61,36 @@ let exampleObject={
     id:73,
 }
 console.log(typeof exampleObject); // object
+
+
+
+
+// <---------------------Memory in JavaScript----------------------------------->
+
+/*
+-->There are two types of memory Stack and Heap 
+-->Stack is used for Primitive datatypes 
+  ->In stack memory u get the copy of the variable
+
+
+
+-->Heap is used for Non primitive datatypes
+  ->In heap memory u get the original reference of the variable
+*/
+
+//Example for stack memory(primitves)
+let myName="tanuja"
+let myNickname=myName
+myNickname="tanu"
+console.log(myName); //tanuja
+console.log(myNickname); //tanu ,because only the copy of myName is given to myNickname so any changes made to it will not affect myName
+
+//Example for Heap
+let userFirst={
+    name:"tanu",
+    id : 75,
+}
+let userSecond=userFirst
+userSecond.name="Tanuja"
+console.log(userFirst); // { name: 'Tanuja', id: 75 }
+console.log(userSecond); // { name: 'Tanuja', id: 75 } ,Since it's Non Primitive ,the original reference of the userOne is given to userSecond.
