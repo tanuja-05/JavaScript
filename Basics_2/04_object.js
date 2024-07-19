@@ -1,0 +1,1 @@
+//declaring objects using constructor and making them singleton
