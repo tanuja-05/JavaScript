@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM manipulation</title>
+    <style>
+        .bg-dark{
+            background-color: #1d1d1d;
+            color: #e8e8e8;
+        }
+    </style>
+</head>
+<body class="bg-dark">
+       <div>
+        <h1 class="header" id="title">The Best Js Tutorial</h1>
+        <p class="paraOne" id="pp">Lorem ipsum dolor sit amet.</p>
+       </div>
+
+       <script>
+       //getElementById
+       //getElementByClass ...
+
+       //getAttribut('class') ,setAttribute( 'id ',' title') [always override]
+       // 
+       //    let ptag=document.getElementById('pp') --- does not recommend suggestion like ptag.style
+       let title=document.getElementById('title')
+       title.style.fontSize="56px"
+
+       // To insert content using dom
+       // textContent => returns all text content 
+       //innerText => returns text content except hidden (display none)[only selected nodes]
+       //innerHTML => returns all html nodes
+
+       //query selector
+       //document.querySelector('use css selectors') : gives the first query that matches
+       //querySelectorAll('css selectors')
+       //Nodelist and htmlCollections are not pure arrays varName[0].style.padding=".."
+       //NodeList has forEach to iterate but HtmlCollection does not has so if u want to use array properties
+       //on both of them then convert into arrays
+       //Array.from(tempClassList)
+
+
+
+       </script>
+    
+</body>
+</html>
