@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom manipulation</title>
+</head>
+<body style="background-color: #1d1d1d; color: white;">
+     <div class="months">
+        <div class="names">January</div>
+        <div class="names">February</div>
+        <div class="names">March</div>
+     </div>
+     <script>
+        let parent=document.querySelector('.months')
+
+        //Accessing childs from parent
+        // console.log(parent);
+        // console.log(parent.children);
+        // console.log(parent.children[1]);//feb
+        // console.log(parent.firstElementChild);// jan
+        // console.log(parent.lastElementChild);//march
+        // for (let i = 0; i < parent.children.length; i++) {
+        //           console.log(parent.children[i].innerHTML);// jan feb mar
+        // }
+
+        //Accessing parent & sibling from child
+        // let firstChild=document.querySelector('.names')
+        // console.log(firstChild);
+        // console.log(firstChild.parentElement);
+        // console.log(firstChild.nextElementSibling);
+
+       //Let's check the no of nodes
+       // nodelist is a collection of document nodes which includes text nodes , attribute nodes and element nodes. A line break is also counted in nodelist but only first one. All subsequent line breaks are ignored by browser
+      // console.log("Nodes :",parent.childNodes);//NodeList(7)
+
+
+     </script>
+</body>
+</html>

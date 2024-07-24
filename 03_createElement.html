@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All-About-Nodes</title>
+</head>
+<body style="background-color: #1d1d1d; color: white;">
+
+    <script>
+        //To create new elements
+        let div=document.createElement('div')
+        console.log(div);
+        //set default attributes to the new element
+        div.className='main div'
+        div.id=Math.round(Math.floor(Math.random()*10))
+        //set custom attributes
+        div.setAttribute('divNumber','firstDiv')
+        //some styling
+        div.style.padding="15px"
+        div.style.backgroundColor="pink"
+        //Add some text content
+        // instead of using div.innerText ,using 
+        // doc.createTextNode('text') is better since it doesn't overwrite
+        // create it's own text node (optimized)
+        let textcont=document.createTextNode("This is Dom manipulation lecture which is the best lecture on internet")
+        div.appendChild(textcont)
+        //attach to the body to display on the browser
+        document.body.appendChild(div)
+    </script>
+    
+</body>
+</html>
